@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #646cff;
+  --secondary-color: #535bf2;
+  --background-color: #f8f9fa;
+  --border-color: #dee2e6;
+  --text-color: #213547;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.simulator-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.control-panel {
+  background: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.input-section, .process-section {
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  margin: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.resource-inputs {
+  margin-bottom: 1rem;
+}
+
+#resourceAllocation {
+  margin-top: 1rem;
+}
+
+.resource-input-group {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.matrix-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.matrix {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.matrix h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.matrix-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.matrix-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  margin: 2px;
+  background: var(--background-color);
+}
+
+.status-panel {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-safe {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.status-unsafe {
+  color: var(--danger-color);
+  font-weight: bold;
+}
+
+#safeSequence {
+  margin-top: 1rem;
+  padding: 10px;
+  background: var(--background-color);
+  border-radius: 4px;
+}
+
+/* Styles for the process input form */
+#processInputForm {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: #fff;
+}
+#processInputForm h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+#processInputForm form div {
+  margin-bottom: 8px;
+}
